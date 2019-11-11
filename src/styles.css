@@ -48,6 +48,24 @@ section:last-of-type {
   border-bottom: none;
 }
 
+h1.mobile {
+  font-size: 2rem;
+}
+
+h1.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  h1.mobile {
+    display: none;
+  }
+
+  h1.desktop {
+    display: block;
+  }
+}
+
 .bold {
   font-weight: 700;
   font-style: "normal";
