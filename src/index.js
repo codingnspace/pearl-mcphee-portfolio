@@ -26,6 +26,30 @@ const quotes = [
   {
     quote: "Do work that matters. Vale la pena",
     source: "Gloria E. Anzaldúa"
+  },
+  {
+    quote:
+      "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And YOU are the one who'll decide where to go...",
+    source: "Dr. Seuss"
+  },
+  {
+    quote: "Fall down seven times. Stand up eight.",
+    source: "Japanese Proverb"
+  },
+  {
+    quote:
+      "You Grow. We all grow. We're made to grow.You either evolve or you disappear.",
+    source: "Tupac Shakur"
+  },
+  {
+    quote:
+      "Success is liking yourself, liking what you do, and liking how you do it.",
+    source: "Maya Angelou"
+  },
+  {
+    quote:
+      "It's hard to lead a cavalry charge if you think you look funny on a horse.",
+    source: "Adlai E. Stevenson"
   }
 ];
 
@@ -35,7 +59,7 @@ const quoteSource = document.querySelector(".source");
 const generateNewQuoteBtn = document.querySelector(".quote-wrapper span");
 
 const getRandomQuote = () => {
-  const randomIndex = Math.floor(Math.random() * 5 + 1);
+  const randomIndex = Math.floor(Math.random() * 10 + 1);
   const newQuote = quotes[randomIndex];
 
   quoteTxt.innerText = `"${newQuote.quote}"`;
